@@ -38,6 +38,11 @@ app.use('/files/download', downloadRoute);
 
 
 
+app.get('*',(req, res) => {
+    res.send('<center><br><h1>WelCome To  File-Sharing-App<h1><br>By Ranjan</center>');
+});
+
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 })
